@@ -1,0 +1,193 @@
+/* Global Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Form Styles */
+
+h1 {
+    color:maroon;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 28px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 100px;
+    font-size: 14px;
+}
+
+.btn {
+    background-color: maroon; /* button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* for cuved borders */
+    cursor: pointer; /* for cursor to become pointer when pointing to the button */
+    margin-top: 10px; /* margin for better spacing */
+}
+
+.btn:hover{
+    background-color: rgba(128, 0, 0, 0.833);
+}
+
+.submit{
+    text-align: center;
+}
+
+/* for error */
+.form-error, .s{
+    color: red !important;
+    font-weight: bolder;
+}
+
+/* alert for confirm password and email */
+.alert {
+  padding: 20px;
+  background-color: #ffea96;
+  color: #333;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: #333;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: #000;
+}
+
+
+/* navbar */
+
+.header{
+    position: relative;
+    top:0;
+    left: 0;
+    width: 90%;
+    padding: 20px 100px;
+    /* background-color: rgb(85, 27, 27); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  /* it is giving a property to the logo sanhjivni */
+  .logo{
+    /* justify-content: flex-end; */
+    font-weight: bolder;
+    z-index: 2;
+  }
+  .header a{
+    color: black !important;
+    font-size: 26px;
+    text-overflow: hidden;
+  }
+  .navbar{
+    animation: slideIn 1s ease-out forwards;  /* it is givving a slide in animation to the navbar */
+  }
+  @keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  .navbar {
+    position: relative;
+    color: black;
+    transition: all 0.3s ease-out;
+  }
+   /* it geeting access by javascript by using the event listenesener of scroll */
+  .navbar.fixed-top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    background-color: maroon;
+    color: white;
+    padding: 20px 100px;
+    text-align: right;
+    z-index: 2;
+  }
+   /* it is giving  a property to the the items of the navbar when the javascript function scroll is used */
+  .navbar.fixed-top a {
+    color: white;
+    margin-left: 50px;
+  }
+  /* it is providing the properities to the items of navbar when the javascript function is not called */
+   .navbar a { 
+    position: relative;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    display: inline-block; 
+  }
+  .navbar a:hover {
+    text-decoration: underline; /* it gives a underline effect to  items of navbar */ 
+    border: 2px rgb(9, 0, 0);
+  }
+  .navbar a::before{
+    content: ' ';
+    position: relative;
+    top: 100;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;        
+  }
+  .navbar a:before::before{
+    width: 100%;
+  }

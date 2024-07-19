@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+  background-image: url('new\ image.jpg');
+}
+.AboutUs{
+   margin-top: 22px;
+    margin-left: 42%;
+    padding: 9px;
+}
+.profilecard {
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px; /* Adjust the margin to your preference */
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+.profilecard1{
+  width: 45%; /* Set the width of each profile card */
+  margin: 0;
+  margin-top: 12px;
+  margin-left: 12%;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 1.5rem;
+  box-shadow: 0px 0px 20px rgba(3, 0, 0, 0.3);
+  background-color:rgba(255, 255, 255, 0.7); 
+  backdrop-filter: opacity(+30px);
+}
+
+.profilecard2 {
+  width: 45%; /* Set the width of each profile card */
+  margin: 0 12px; /* Adjust the margin between profile cards */
+  margin-left: 12%;
+  margin-right: 12%;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 1.5rem;
+  box-shadow: 0px 0px 20px rgba(3, 0, 0, 0.3);
+  background-color:rgba(255, 255, 255, 0.7); 
+  backdrop-filter: opacity(+30px);
+}
+.profilecard1 img,
+.profilecard2 img {
+  width: 120px;
+  height: 120px;
+  border-radius: 70%;
+  margin-bottom: 15px;
+}
+
+.profilecard1 .data h2,
+.profilecard2 .data h2 {
+  font-size: 17px;
+}
+
+.profilecard1 .data h3,
+.profilecard2 .data h3 {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+.header{
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    /* background-color: rgb(85, 27, 27); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .logo{
+    /* justify-content: flex-end; */
+    font-weight: bolder;
+    z-index: 2;
+  }
+   .fixed-top.logo {
+    transform: translateX(-50%,);
+    position: fixed; /* Fix the position of the logo when the navbar becomes fixed */
+    top: 0;
+    left: 50%;
+    padding: 20px 100px;
+  } 
+  .header a{
+    color: black !important;
+    font-size: 26px;
+    text-overflow: hidden;
+  }
+  .navbar{
+    animation: slideIn 1s ease-out forwards;
+  }
+  @keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  .navbar {
+    position: relative;
+    color: black;
+    transition: all 0.3s ease-out;
+  }
+  
+  .navbar.fixed-top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: maroon;
+    color: white;
+    padding: 20px 100px;
+    text-align: right;
+    z-index: 2;
+  }
+  
+  .navbar.fixed-top a {
+    color: white;
+    margin-left: 50px;
+  }
+   .navbar a { 
+    position: relative;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    display: inline-block; 
+  }
+  .navbar a:hover {
+    text-decoration: underline;
+    border: 2px rgb(9, 0, 0);
+  }
+
+  .navbar a::before{
+    content: ' ';
+    position: relative;
+    top: 100;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    backdrop-filter: blur(30px);
+  }
+
+  /* footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.footer-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-menu li:hover {
+    text-decoration: underline;
+}
+
+.footer-menu li:last-child {
+    margin-right: 0;
+}
+
+.footer-menu li::after {
+    content: "|";
+    margin-left: 20px;
+    color: white;
+}
+
+.footer-menu li:last-child::after {
+    content: "";
+}
+
+.footer .copyright {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    background-color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer-menu li a:visited{
+  color:white;
+}
+
+  
+  
